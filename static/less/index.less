@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.muyu {
+  position: absolute;
+  margin: auto 0;
+  display: flex;
+  bottom: 0px;
+  top: 0px;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  > img {
+    width: 300px;
+    height: 200px;
+    user-select: none;
+    transition: all 0.3s;
+  }
+}
+
+.gongde {
+  position: relative;
+  color: #fff;
+  height: 10px;
+}
+.gongde-item {
+  position: absolute;
+  left: -50vw;
+  width: 100vw;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  transform: translateY(0px);
+  animation: move 2s;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+.setting {
+  position: relative;
+  left: 15px;
+  top: 15px;
+}
+
+.clickDown{
+  transform: scale(0.9);
+}
